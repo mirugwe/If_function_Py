@@ -1,0 +1,12 @@
+salary = eval(input("Please enter your salay: "))
+
+if salary < 235000:
+    print("Your netpay is ",salary)
+elif salary > 235000 and salary < 335000 :
+    tax = 0.1*(salary-23400)
+    netpay = salary - tax
+    print("Your netpay is",netpay)
+elif salary > 335000 and salary < 410000:
+    tax = 10000 + (0.2*(salary - 335000))
+    netpay = salary - tax
+    print("Your netpay is" ,netpay)
